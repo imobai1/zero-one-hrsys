@@ -1,7 +1,21 @@
 <template>
-  <echarts :options="pieChartOptions" />
-  <echarts :options="lineChartOption" />
-  <echarts :options="circularChartOptions" />
+
+  <el-row>
+    <el-col :span="18">
+      <el-row>
+
+        <el-col :span="12">
+          <echarts :options="pieChartOptions" />
+          <echarts :options="funnelChartOption" />
+        </el-col>
+        <el-col :span="12">
+          <echarts :options="lineChartOption" />
+          <echarts :options="circularChartOptions" />
+        </el-col>
+      </el-row>
+
+    </el-col>
+  </el-row>
 
 </template>
 
@@ -73,8 +87,64 @@ export default {
             data: [1, 18, 7, 0,]
           }
         ]
+      },
+      funnelChartOption: {
+        title: {
+          text: '漏斗图'
+        },
+        tooltip: {
+          trigger: 'item',
+          formatter: "{a} <br/>{b} : {c}%"
+        },
+        legend: {
+          data: ['流失率']
+        },
+        calculable: true,
+        series: [
+          {
+            name: '流失率',
+            type: 'funnel',
+            left: '10%',
+            top: 60,
+            // 宽度，可以是像素，也可以是百分比
+            width: '80%',
+            // 总高度（包含标题和图例）
+            height: '75%',
+            // 排序方式（'ascending', 'descending'，默认不排序）
+            sort: 'descending',
+            label: {
+              show: true,
+              position: 'inside'
+            },
+            // 每一层数据的描述
+            data: [
+              { value: 80, name: '访问' },
+              { value: 50, name: '咨询' },
+              { value: 30, name: '订单' },
+              { value: 10, name: '退货' }
+            ]
+          }
+        ]
       }
     }
   }
 };
 </script>
+
+
+<style lang="scss">
+.el-row {
+  margin-bottom: 20px;
+}
+.el-row:last-child {
+  margin-bottom: 0;
+}
+.el-col {
+  border-radius: 4px;
+}
+
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+}
+</style>
