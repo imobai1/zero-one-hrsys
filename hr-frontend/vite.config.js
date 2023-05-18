@@ -55,7 +55,14 @@ export default ({ mode }) =>
     plugins: [
       vue(),
       AutoImport({
-        resolvers: [ElementPlusResolver()]
+        //自动导入api，无需重复导入直接使用
+        imports: ['vue', 'vue-router', 'pinia'],
+        resolvers: [ElementPlusResolver()],
+        eslintrc: {
+          enabled: false,
+          filepath: './eslintrc-auto-import.json',
+          globalsPropValue: true
+        }
       }),
       Components({
         resolvers: [ElementPlusResolver()]
