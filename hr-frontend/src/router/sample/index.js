@@ -11,6 +11,10 @@ const routes = [
       {
         path: '/sample/print',
         component: () => import('@/views/sample/print/Print.vue')
+      },
+      {
+        path: '/sample/echarts',
+        component: () => import('@/views/sample/echarts_test/Echart.vue')
       }
     ]
   }

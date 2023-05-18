@@ -82,6 +82,10 @@ const menus = reactive([
   {
     path: '/sample/print',
     text: '打印演示'
+  },
+  {
+    path: '/sample/echarts',
+    text: 'Echarts演示'
   }
 ])
 </script>
