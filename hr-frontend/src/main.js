@@ -7,7 +7,7 @@ import App from './App.vue'
 import router from './router'
 import 'element-plus/theme-chalk/src/message.scss'
 import './assets/main.css'
-import ECharts from './components/ECharts.vue'
+import ECharts from './components/echarts/ECharts.vue'
 // import ECharts from './components/echarts/echart-with-color.vue'
 
 const app = createApp(App)
