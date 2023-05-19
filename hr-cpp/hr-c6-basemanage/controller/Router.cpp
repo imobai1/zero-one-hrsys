@@ -26,8 +26,8 @@
 #include "uselib/ws/WSController.h"
 #endif
 
-#include "Muggle/labor_dispatch-Muggle.h"
-#include "Muggle/expense_ledger-Muggle.h"
+#include "Muggle/laborDispatchController.h"
+#include "Muggle/expenseLedgerController.h"
 
 
 // 如果定义了关闭Swagger文档宏

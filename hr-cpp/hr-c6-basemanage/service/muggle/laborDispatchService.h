@@ -1,8 +1,9 @@
+#pragma once
 /*
  Copyright Muggle. All rights reserved.
 
  @Author: Muggle
- @Date: 2023/05/19 23:27:35
+ @Date: 2023/05/20 0:00:36
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -16,23 +17,19 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#pragma once
-#ifndef _EL_M_DTO_
-#define _EL_M_DTO_
-#include "../../GlobalInclude.h"
+#ifndef _LD_M_SERVICE_
+#define _LD_M_SERVICE_
+#include "domain/dto/muggle/laborDispatchDTO.h"
+#include "domain/vo/Muggle/laborDispatchJsonVO.h"
+#include "domain/query/Muggle/laborDispatchQuery.h"
 
-#include OATPP_CODEGEN_BEGIN(DTO)
-
-class ExpenseLedgerMDTO : public oatpp::DTO
+class LaborDispatchMService
 {
-	DTO_INIT(ExpenseLedgerMDTO, DTO);
+public:
+	LaborDispatchMDTO::Wrapper ListData(const LaborDispatchMQuery::Wrapper& query);
 
-	DTO_FIELD(String, expenseCategory);//费用类别，命名不规范，亲人两行泪
-	DTO_FIELD_INFO(expenseCategory) {
-		info->description = ZH_WORDS_GETTER("expenseledger_mug.field.expenseCategory");
-	}
+	bool modifyData(const LaborDispatchMDTO::Wrapper& dto);
+protected:
+private:
 };
-
-#include OATPP_CODEGEN_END(DTO)
-
-#endif // !_M_EL_DTO_
+#endif

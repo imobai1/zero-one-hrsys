@@ -2,7 +2,7 @@
  Copyright Muggle. All rights reserved.
 
  @Author: Muggle
- @Date: 2023/05/19 23:27:35
+ @Date: 2023/05/19 23:25:14
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -16,23 +16,22 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#pragma once
-#ifndef _EL_M_DTO_
-#define _EL_M_DTO_
-#include "../../GlobalInclude.h"
+#include "stdafx.h"
+#include "expenseLedgerController.h"
 
-#include OATPP_CODEGEN_BEGIN(DTO)
-
-class ExpenseLedgerMDTO : public oatpp::DTO
+StringJsonVO::Wrapper ExpenseLedgerMController::execQueryExpenseLedger()
 {
-	DTO_INIT(ExpenseLedgerMDTO, DTO);
+	return StringJsonVO::Wrapper();
+}
 
-	DTO_FIELD(String, expenseCategory);//费用类别，命名不规范，亲人两行泪
-	DTO_FIELD_INFO(expenseCategory) {
-		info->description = ZH_WORDS_GETTER("expenseledger_mug.field.expenseCategory");
-	}
-};
+StringJsonVO::Wrapper ExpenseLedgerMController::execAddExpenseLedger()
+{
+	return StringJsonVO::Wrapper();
+}
 
-#include OATPP_CODEGEN_END(DTO)
+StringJsonVO::Wrapper ExpenseLedgerMController::execDeleteExpenseLedger()
+{
+	return StringJsonVO::Wrapper();
+}
 
-#endif // !_M_EL_DTO_
+

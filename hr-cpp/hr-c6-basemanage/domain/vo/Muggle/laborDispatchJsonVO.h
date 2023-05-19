@@ -1,9 +1,9 @@
 #pragma once
-#ifndef _M_LDJ_VO_
-#define _M_LDJ_VO_
+#ifndef _LDJ_M_VO_
+#define _LDJ_M_VO_
 #include "../../GlobalInclude.h"
 #include "domain/vo/JsonVO.h"
-#include "../../dto/Muggle/laborDispatchDTO.h"
+#include "domain/dto/muggle/LaborDispatchDTO.h"
 
 #include OATPP_CODEGEN_BEGIN(DTO)
 
@@ -14,4 +14,4 @@ class LaborDispatchJsonMVO : public JsonVO<LaborDispatchMDTO::Wrapper>
 
 
 #include OATPP_CODEGEN_END(DTO)
-#endif // !_M_LDJ_VO_
+#endif // !_LDJ_M_VO_

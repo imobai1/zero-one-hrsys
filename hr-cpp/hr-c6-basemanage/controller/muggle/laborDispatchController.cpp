@@ -2,7 +2,7 @@
  Copyright Muggle. All rights reserved.
 
  @Author: Muggle
- @Date: 2023/05/19 23:27:35
+ @Date: 2023/05/19 23:25:03
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -16,23 +16,23 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#pragma once
-#ifndef _EL_M_DTO_
-#define _EL_M_DTO_
-#include "../../GlobalInclude.h"
+#include "stdafx.h"
+#include "laborDispatchController.h"
+#include "../../service/muggle/LaborDispatchService.h"
 
-#include OATPP_CODEGEN_BEGIN(DTO)
-
-class ExpenseLedgerMDTO : public oatpp::DTO
+LaborDispatchJsonMVO::Wrapper LaborDispatchMController::execQueryLaborDispatch(const LaborDispatchMQuery::Wrapper& query)
 {
-	DTO_INIT(ExpenseLedgerMDTO, DTO);
+	// 定义Service
+	LaborDispatchMService service;
+	// service执行并返回数据
+	auto result = service.ListData(query);
+	// 响应结果
+	auto vo = LaborDispatchJsonMVO::createShared();
+	vo->success(result);
+	return vo;
+}
 
-	DTO_FIELD(String, expenseCategory);//费用类别，命名不规范，亲人两行泪
-	DTO_FIELD_INFO(expenseCategory) {
-		info->description = ZH_WORDS_GETTER("expenseledger_mug.field.expenseCategory");
-	}
-};
-
-#include OATPP_CODEGEN_END(DTO)
-
-#endif // !_M_EL_DTO_
+StringJsonVO::Wrapper LaborDispatchMController::execModifyLaborDispatch()
+{
+	return StringJsonVO::Wrapper();
+}
