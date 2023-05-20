@@ -172,14 +172,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="controller\OtherComponent.hpp" />
+    <ClInclude Include="controller\patentInformation\patentController.h" />
     <ClInclude Include="controller\Router.h" />
     <ClInclude Include="domain\do\DoInclude.h" />
+    <ClInclude Include="domain\dto\patentInformation\patentInformationDTO.h" />
     <ClInclude Include="domain\GlobalInclude.h" />
+    <ClInclude Include="domain\query\patentInformation\patentInformationQuery.h" />
+    <ClInclude Include="domain\vo\patentInformation\patentInformationVO.h" />
     <ClInclude Include="Macros.h" />
     <ClInclude Include="ServerInfo.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="controller\patentInformation\patentController.cpp" />
     <ClCompile Include="controller\Router.cpp" />
     <ClCompile Include="controller\SystemInterceptor.cpp" />
     <ClCompile Include="main.cpp" />
