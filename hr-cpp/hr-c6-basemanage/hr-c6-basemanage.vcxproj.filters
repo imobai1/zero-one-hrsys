@@ -33,7 +33,7 @@
     <ClCompile Include="controller\Muggle\ExpenseLedgerController.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="service\muggle\laborDispatchService.cpp">
+    <ClCompile Include="service\muggle\LaborDispatchService.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="dao\muggle\LaborDispatchDAO.cpp">
@@ -83,7 +83,7 @@
     <ClInclude Include="domain\query\Muggle\ExpenseLedgerQuery.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="service\muggle\laborDispatchService.h">
+    <ClInclude Include="service\muggle\LaborDispatchService.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="dao\muggle\LaborDispatchDAO.h">

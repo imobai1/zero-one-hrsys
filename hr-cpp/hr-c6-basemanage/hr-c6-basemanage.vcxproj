@@ -165,7 +165,7 @@
     <ClCompile Include="controller\SystemInterceptor.cpp" />
     <ClCompile Include="dao\muggle\LaborDispatchDAO.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="service\muggle\laborDispatchService.cpp" />
+    <ClCompile Include="service\muggle\LaborDispatchService.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -189,7 +189,7 @@
     <ClInclude Include="domain\vo\Muggle\LaborDispatchJsonVO.h" />
     <ClInclude Include="Macros.h" />
     <ClInclude Include="ServerInfo.h" />
-    <ClInclude Include="service\muggle\laborDispatchService.h" />
+    <ClInclude Include="service\muggle\LaborDispatchService.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>

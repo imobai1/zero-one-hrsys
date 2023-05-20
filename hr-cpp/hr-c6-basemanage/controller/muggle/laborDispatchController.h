@@ -39,7 +39,7 @@ public:
 	ENDPOINT_INFO(queryLaborDispatch) {
 		// 定义接口标题
 		info->summary = ZH_WORDS_GETTER("labordispatch_mug.get.summary");
-		//API_DEF_ADD_RSP_JSON_WRAPPER()
+		API_DEF_ADD_RSP_JSON_WRAPPER(LaborDispatchMDTO);
 		
 		// 定义输入参数描述
 		info->queryParams.add<String>("corporateName").description = ZH_WORDS_GETTER("labordispatch_mug.field.corporatename");;
