@@ -1,5 +1,5 @@
 server:
-  port: ${sp.test}
+  port: ${sp.user}
 spring:
   application:
-    name: ${sn.test}
+    name: ${sn.user}

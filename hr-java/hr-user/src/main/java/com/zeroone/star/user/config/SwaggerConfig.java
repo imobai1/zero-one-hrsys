@@ -12,6 +12,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 public class SwaggerConfig {
     @Bean
     Docket UserManagementApi(){
-        return SwaggerCore.defaultDocketBuilder("用户管理模块","com.zeroone.star.user.controller","usermanagement");
+        return SwaggerCore.defaultDocketBuilder("用户管理模块","com.zeroone.star.user.controller","usermanager");
     }
 }
