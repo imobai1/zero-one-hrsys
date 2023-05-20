@@ -58,7 +58,7 @@ public:
 	//导出全部
 	ENDPOINT_INFO(ExportContract) {
 		//定义接口标题
-		info->summary = "Export";
+		info->summary = "exportContract";
 		//定义响应参数类型——链接
 		API_DEF_ADD_RSP_JSON_WRAPPER(StringJsonVO);
 	}
