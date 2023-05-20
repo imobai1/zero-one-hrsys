@@ -18,14 +18,21 @@
 */
 #include "stdafx.h"
 #include "laborDispatchService.h"
+#include "../../dao/muggle/LaborDispatchDAO.h"
 
 LaborDispatchMDTO::Wrapper LaborDispatchMService::ListData(const LaborDispatchMQuery::Wrapper& query)
 {
 	auto reply = LaborDispatchMDTO::createShared();
-	reply->corporateAddress = "cosmic";
-	reply->corporateContact = "muggle";
-	reply->corporateName = "zerone";
-	reply->corporateNumber = "8848";
+	LaborDispatchMDAO dao;
+	auto result = dao.selectByCorporateName(query);
+	reply->corporateName = result.getCorporateName();
+	reply->corporateAddress = result.getCorporateAddress();
+	reply->corporateContact = result.getCorporateContact();
+	reply->corporateNumber = result.getCorporateNumber();
+	//reply->corporateAddress = "cosmic";
+	//reply->corporateContact = "muggle";
+	//reply->corporateName = "zerone";
+	//reply->corporateNumber = "8848";
 	return reply;
 }
 

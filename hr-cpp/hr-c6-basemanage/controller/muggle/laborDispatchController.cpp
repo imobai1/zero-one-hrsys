@@ -17,7 +17,7 @@
  limitations under the License.
 */
 #include "stdafx.h"
-#include "laborDispatchController.h"
+#include "LaborDispatchController.h"
 #include "../../service/muggle/LaborDispatchService.h"
 
 LaborDispatchJsonMVO::Wrapper LaborDispatchMController::execQueryLaborDispatch(const LaborDispatchMQuery::Wrapper& query)

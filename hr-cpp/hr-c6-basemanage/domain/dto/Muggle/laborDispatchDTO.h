@@ -20,28 +20,36 @@
 #ifndef _LD_M_DTO_
 #define _LD_M_DTO_
 #include "../../GlobalInclude.h"
-//#include "domain/vo/JsonVO.h"
+#include "domain/vo/JsonVO.h"
 #include OATPP_CODEGEN_BEGIN(DTO)
 
 class LaborDispatchMDTO : public oatpp::DTO
 {
 	DTO_INIT(LaborDispatchMDTO, DTO);
-
+	/**
+	 * 公司名称
+	 */
 	DTO_FIELD(String, corporateName);
 	DTO_FIELD_INFO(corporateName) {
 		info->description = ZH_WORDS_GETTER("labordispatch_mug.field.corporatename");
 	}
-
+	/**
+	 * 公司地址
+	 */
 	DTO_FIELD(String, corporateAddress);
 	DTO_FIELD_INFO(corporateAddress) {
 		info->description = ZH_WORDS_GETTER("labordispatch_mug.field.corporateaddress");
 	}
-	
+	/**
+	 * 公司联系人
+	 */
 	DTO_FIELD(String, corporateContact);
 	DTO_FIELD_INFO(corporateContact) {
 		info->description = ZH_WORDS_GETTER("labordispatch_mug.field.corporatecontact");
 	}
-
+	/**
+	 * 公司联系电话
+	 */
 	DTO_FIELD(String, corporateNumber);
 	DTO_FIELD_INFO(corporateNumber) {
 		info->description = ZH_WORDS_GETTER("labordispatch_mug.field.corporatenumber");

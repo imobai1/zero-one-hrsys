@@ -1,9 +1,8 @@
-#pragma once
 /*
  Copyright Muggle. All rights reserved.
 
  @Author: Muggle
- @Date: 2023/05/20 0:00:36
+ @Date: 2023/05/20 10:53:13
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -17,19 +16,27 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
-#ifndef _LD_M_SERVICE_
-#define _LD_M_SERVICE_
-#include "domain/dto/muggle/laborDispatchDTO.h"
-#include "domain/vo/muggle/laborDispatchJsonVO.h"
-#include "domain/query/muggle/laborDispatchQuery.h"
+#pragma once
+#ifndef _LD_M_DO_
+#define _LD_M_DO_
+#include "../DoInclude.h"
 
-class LaborDispatchMService
+class LaborDispatchMDO
 {
+	// 公司名称
+	CC_SYNTHESIZE(string, corporatename, CorporateName);
+	// 公司地址
+	CC_SYNTHESIZE(string, corporateAddress, CorporateAddress);
+	// 公司联系人
+	CC_SYNTHESIZE(string, corporateContact, CorporateContact);
+	// 公司联系电话
+	CC_SYNTHESIZE(string, corporateNumber, CorporateNumber);
 public:
-	LaborDispatchMDTO::Wrapper ListData(const LaborDispatchMQuery::Wrapper& query);
-
-	bool modifyData(const LaborDispatchMDTO::Wrapper& dto);
-protected:
-private:
+	LaborDispatchMDO() {
+		corporatename = "";
+		corporateAddress = "";
+		corporateContact = "";
+		corporateNumber = "";
+	}
 };
 #endif

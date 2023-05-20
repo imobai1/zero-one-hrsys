@@ -21,8 +21,8 @@
 #define _EL_M_CONTROLLER_
 
 #include "domain/vo/BaseJsonVO.h"
-#include "domain/query/Muggle/ExpenseLedgerQuery.h"
-#include "domain/dto/Muggle/ExpenseLedgerDTO.h"
+#include "domain/query/muggle/ExpenseLedgerQuery.h"
+#include "domain/dto/muggle/ExpenseLedgerDTO.h"
 #include "ApiHelper.h"
 #include "Macros.h"
 #include "ServerInfo.h"
@@ -42,17 +42,17 @@ public:
 		info->queryParams["expenseCategory"].addExample("default", String("PDD"));
 		info->queryParams["expenseCategory"].required = false;
 	}
-
 	ENDPOINT(API_M_GET, "/query-by-expense-category", queryExpenseLedger,QUERIES(QueryParams, queryParams)) {
 		API_HANDLER_QUERY_PARAM(query, ExpenseLedgerPageMQuery, queryParams);
 		API_HANDLER_RESP_VO(execQueryExpenseLedger());
 	}
+
 	// 新增费别
 	ENDPOINT_INFO(addExpenseLedger) {
 		info->summary = ZH_WORDS_GETTER("expenseledger_mug.post.summary");
 		API_DEF_ADD_RSP_JSON_WRAPPER(Uint64JsonVO);
 	}
-	ENDPOINT(API_M_POST, "/add", addExpenseLedger, BODY_DTO(ExpenseLedgerMDTO::Wrapper, dto)) {
+	ENDPOINT(API_M_POST, "/add-expense-category", addExpenseLedger, BODY_DTO(ExpenseLedgerMDTO::Wrapper, dto)) {
 		API_HANDLER_RESP_VO(execAddExpenseLedger());
 	}
 	
@@ -61,7 +61,6 @@ public:
 		info->summary = ZH_WORDS_GETTER("expenseledger_mug.delete.summary");
 		API_DEF_ADD_RSP_JSON_WRAPPER(Uint64JsonVO);
 	}
-
 	ENDPOINT(API_M_DEL, "/delete-by-expense-category", deleteExpenseLedger, BODY_DTO(ExpenseLedgerMDTO::Wrapper, dto)) {
 		API_HANDLER_RESP_VO(execDeleteExpenseLedger());
 	}
