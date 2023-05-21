@@ -250,9 +250,12 @@
     <ClInclude Include="controller\Router.h" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClInclude Include="controller\titleCatalogue\typeChangeController\TypeChangeController.h" />
     <ClInclude Include="controller\titleCatalogue\typeDeleteController\TypeDeleteController.h" />
     <ClInclude Include="controller\titleCatalogue\typeQueryController\TypeQueryController.h" />
+=======
+>>>>>>> c7-gwzs-huazai2
     <ClInclude Include="domain\do\DoInclude.h" />
 <<<<<<< HEAD
     <ClInclude Include="domain\dto\certificate\CertificateDTO.h" />
@@ -299,12 +302,15 @@
     <ClCompile Include="controller\Router.cpp" />
     <ClCompile Include="controller\SystemInterceptor.cpp" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClCompile Include="controller\titleCatalogue\typeChangeController\TypeChangeController.cpp" />
     <ClCompile Include="controller\titleCatalogue\typeDeleteController\TypeDeleteController.cpp" />
     <ClCompile Include="controller\titleCatalogue\typeQueryController\TypeQueryController.cpp" />
 =======
     <ClCompile Include="dao\contract\ContractDAO.cpp" />
 >>>>>>> c7-htlx-zhuiyi
+=======
+>>>>>>> c7-gwzs-huazai2
     <ClCompile Include="main.cpp" />
     <ClCompile Include="service\contract\ContractService.cpp" />
     <ClCompile Include="stdafx.cpp">

@@ -49,6 +49,7 @@
     <ClInclude Include="domain\query\Qualification\QualificationQuery.h">
       <Filter>头文件</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="controller\titleCatalogue\typeChangeController\TypeChangeController.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -59,6 +60,8 @@
       <Filter>头文件</Filter>
     </ClInclude>
 <<<<<<< HEAD
+=======
+>>>>>>> c7-gwzs-huazai2
     <ClInclude Include="domain\dto\contracttype\ContractTypeCreateDTO.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -152,6 +155,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClCompile Include="controller\titleCatalogue\typeChangeController\TypeChangeController.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -170,6 +174,8 @@
 >>>>>>> c7-htlx-zhuiyi
       <Filter>源文件</Filter>
     </ClCompile>
+=======
+>>>>>>> c7-gwzs-huazai2
   </ItemGroup>
 =======
     <ClCompile Include="controller\Router.cpp">
