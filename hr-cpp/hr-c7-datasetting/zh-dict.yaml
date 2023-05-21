@@ -28,6 +28,7 @@ sample:
   id: 编号
   age: 年龄
   name: 姓名
+<<<<<<< HEAD
   sex: 性别，如：男
 <<<<<<< HEAD
 certificate:
@@ -78,3 +79,6 @@ contractType:
   remainingDays: 合同剩余时间
   expiryDate: 试用到期时间
 >>>>>>> c7-htlx-zhuiyi
+=======
+  sex: 性别，如：男
+>>>>>>> c7-title-black
