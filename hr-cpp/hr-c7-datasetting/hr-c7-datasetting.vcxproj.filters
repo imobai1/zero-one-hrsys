@@ -34,13 +34,17 @@
       <Filter>头文件</Filter>
     </ClInclude>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClInclude Include="domain\dto\certificate\CertificateDTO.h">
+=======
+    <ClInclude Include="domain\dto\Qualification\QulificationDTO.h">
+>>>>>>> c7-gwjn-longyiye
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="domain\vo\certificate\CertificateVO.h">
+    <ClInclude Include="domain\vo\Qulification\QulificationVO.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="domain\query\certificate\CertificateQuery.h">
+    <ClInclude Include="domain\query\Qualification\QualificationQuery.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="controller\titleCatalogue\typeChangeController\TypeChangeController.h">
@@ -52,6 +56,7 @@
     <ClInclude Include="controller\titleCatalogue\typeQueryController\TypeQueryController.h">
       <Filter>头文件</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="domain\dto\contracttype\ContractTypeCreateDTO.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -94,6 +99,8 @@
 >>>>>>> c7-archives-kling
       <Filter>头文件</Filter>
     </ClInclude>
+=======
+>>>>>>> c7-gwjn-longyiye
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

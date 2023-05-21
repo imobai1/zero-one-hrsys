@@ -178,6 +178,7 @@
     <ClInclude Include="controller\titleCatalogue\typeDeleteController\TypeDeleteController.h" />
     <ClInclude Include="controller\titleCatalogue\typeQueryController\TypeQueryController.h" />
     <ClInclude Include="domain\do\DoInclude.h" />
+<<<<<<< HEAD
     <ClInclude Include="domain\dto\certificate\CertificateDTO.h" />
     <ClInclude Include="domain\dto\contracttype\ContractTypeCreateDTO.h" />
     <ClInclude Include="domain\dto\contracttype\ContractTypeDeleteDTO.h" />
@@ -197,6 +198,11 @@
     <ClInclude Include="domain\query\archive\ArchiveQuery.h" />
     <ClInclude Include="domain\vo\archive\ArchiveVO.h" />
 >>>>>>> c7-archives-kling
+=======
+    <ClInclude Include="domain\dto\Qualification\QulificationDTO.h" />
+    <ClInclude Include="domain\query\Qualification\QualificationQuery.h" />
+    <ClInclude Include="domain\vo\Qulification\QulificationVO.h" />
+>>>>>>> c7-gwjn-longyiye
     <ClInclude Include="Macros.h" />
     <ClInclude Include="ServerInfo.h" />
     <ClInclude Include="stdafx.h" />
