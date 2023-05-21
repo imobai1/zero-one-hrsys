@@ -34,8 +34,13 @@ sample:
 certificate:
  field:
   id: 排序号
+<<<<<<< HEAD
   certificateName: 证书名称
   contractType:
+=======
+  certificateName:	证书名称
+contractType:
+>>>>>>> c7-gwzs-huazai
   query-all:
     summary: 分页查询合同类别列表
   post:
