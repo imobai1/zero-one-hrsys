@@ -170,8 +170,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="controller\archive\ArchiveController.h" />
     <ClInclude Include="controller\OtherComponent.hpp" />
     <ClInclude Include="controller\Router.h" />
+<<<<<<< HEAD
     <ClInclude Include="controller\titleCatalogue\typeChangeController\TypeChangeController.h" />
     <ClInclude Include="controller\titleCatalogue\typeDeleteController\TypeDeleteController.h" />
     <ClInclude Include="controller\titleCatalogue\typeQueryController\TypeQueryController.h" />
@@ -188,11 +190,19 @@
     <ClInclude Include="domain\vo\contracttype\ContractTypeExportVO.h" />
     <ClInclude Include="domain\vo\contracttype\ContractTypeUpdateResultVO.h" />
     <ClInclude Include="domain\vo\contracttype\ContractTypeVO.h" />
+=======
+    <ClInclude Include="domain\do\archive\ArchiveDO.h" />
+    <ClInclude Include="domain\do\DoInclude.h" />
+    <ClInclude Include="domain\dto\archive\ArchiveDTO.h" />
+    <ClInclude Include="domain\query\archive\ArchiveQuery.h" />
+    <ClInclude Include="domain\vo\archive\ArchiveVO.h" />
+>>>>>>> c7-archives-kling
     <ClInclude Include="Macros.h" />
     <ClInclude Include="ServerInfo.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="controller\archive\ArchiveController.cpp" />
     <ClCompile Include="controller\Router.cpp" />
     <ClCompile Include="controller\SystemInterceptor.cpp" />
     <ClCompile Include="controller\titleCatalogue\typeChangeController\TypeChangeController.cpp" />

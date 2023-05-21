@@ -33,6 +33,7 @@
     <ClInclude Include="domain\do\DoInclude.h">
       <Filter>头文件</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="domain\dto\certificate\CertificateDTO.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -76,6 +77,21 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="domain\vo\contracttype\ContractTypeVO.h">
+=======
+    <ClInclude Include="domain\do\archive\ArchiveDO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\dto\archive\ArchiveDTO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\query\archive\ArchiveQuery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\vo\archive\ArchiveVO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="controller\archive\ArchiveController.h">
+>>>>>>> c7-archives-kling
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -92,6 +108,7 @@
     <ClCompile Include="controller\SystemInterceptor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="controller\titleCatalogue\typeChangeController\TypeChangeController.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -99,6 +116,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="controller\titleCatalogue\typeQueryController\TypeQueryController.cpp">
+=======
+    <ClCompile Include="controller\archive\ArchiveController.cpp">
+>>>>>>> c7-archives-kling
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
