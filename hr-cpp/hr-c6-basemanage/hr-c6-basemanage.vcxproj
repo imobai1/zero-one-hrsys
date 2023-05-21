@@ -181,12 +181,12 @@
     <ClInclude Include="dao\muggle\LaborDispatchDAO.h" />
     <ClInclude Include="domain\do\DoInclude.h" />
     <ClInclude Include="domain\do\muggle\LaborDispatchDO.h" />
-    <ClInclude Include="domain\dto\Muggle\ExpenseLedgerDTO.h" />
-    <ClInclude Include="domain\dto\Muggle\LaborDispatchDTO.h" />
+    <ClInclude Include="domain\dto\muggle\ExpenseLedgerDTO.h" />
+    <ClInclude Include="domain\dto\muggle\LaborDispatchDTO.h" />
     <ClInclude Include="domain\GlobalInclude.h" />
     <ClInclude Include="domain\query\Muggle\ExpenseLedgerQuery.h" />
     <ClInclude Include="domain\query\Muggle\LaborDispatchQuery.h" />
-    <ClInclude Include="domain\vo\Muggle\LaborDispatchJsonVO.h" />
+    <ClInclude Include="domain\vo\muggle\LaborDispatchJsonVO.h" />
     <ClInclude Include="Macros.h" />
     <ClInclude Include="ServerInfo.h" />
     <ClInclude Include="service\muggle\LaborDispatchService.h" />

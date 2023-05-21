@@ -68,13 +68,13 @@
     <ClInclude Include="domain\query\Muggle\LaborDispatchQuery.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="domain\dto\Muggle\LaborDispatchDTO.h">
+    <ClInclude Include="domain\dto\muggle\LaborDispatchDTO.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="domain\vo\Muggle\LaborDispatchJsonVO.h">
+    <ClInclude Include="domain\vo\muggle\LaborDispatchJsonVO.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="domain\dto\Muggle\ExpenseLedgerDTO.h">
+    <ClInclude Include="domain\dto\muggle\ExpenseLedgerDTO.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="controller\Muggle\ExpenseLedgerController.h">

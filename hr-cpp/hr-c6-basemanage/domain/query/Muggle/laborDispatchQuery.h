@@ -25,7 +25,9 @@
 class LaborDispatchMQuery : public oatpp::DTO
 {
 	DTO_INIT(LaborDispatchMQuery, DTO);
-	// 公司名称
+	/**
+	 * 公司名称
+	 */
 	DTO_FIELD(String, corporateName);
 	DTO_FIELD_INFO(corporateName) {
 		info->description = ZH_WORDS_GETTER("labordispatch_mug.field.corporatename");
