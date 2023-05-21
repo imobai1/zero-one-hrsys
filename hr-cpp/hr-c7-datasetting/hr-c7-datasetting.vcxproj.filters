@@ -35,6 +35,7 @@
     </ClInclude>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClInclude Include="domain\dto\certificate\CertificateDTO.h">
 =======
     <ClInclude Include="domain\dto\Qualification\QulificationDTO.h">
@@ -101,6 +102,32 @@
     </ClInclude>
 =======
 >>>>>>> c7-gwjn-longyiye
+=======
+    <ClInclude Include="dao\contract\ContractDAO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dao\contract\ContractMapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\do\ContractType\ContractTypeDO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\dto\ContractType\ContractTypeDTO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\query\ContractType\ContractTypeQuery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\vo\ContractType\ContractTypeVO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\GlobalInclude.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="service\contract\ContractService.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+>>>>>>> c7-htlx-zhuiyi
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -116,6 +143,7 @@
       <Filter>源文件</Filter>
     </ClCompile>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClCompile Include="controller\titleCatalogue\typeChangeController\TypeChangeController.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -126,6 +154,12 @@
 =======
     <ClCompile Include="controller\archive\ArchiveController.cpp">
 >>>>>>> c7-archives-kling
+=======
+    <ClCompile Include="dao\contract\ContractDAO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="service\contract\ContractService.cpp">
+>>>>>>> c7-htlx-zhuiyi
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

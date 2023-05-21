@@ -174,6 +174,7 @@
     <ClInclude Include="controller\OtherComponent.hpp" />
     <ClInclude Include="controller\Router.h" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClInclude Include="controller\titleCatalogue\typeChangeController\TypeChangeController.h" />
     <ClInclude Include="controller\titleCatalogue\typeDeleteController\TypeDeleteController.h" />
     <ClInclude Include="controller\titleCatalogue\typeQueryController\TypeQueryController.h" />
@@ -203,18 +204,34 @@
     <ClInclude Include="domain\query\Qualification\QualificationQuery.h" />
     <ClInclude Include="domain\vo\Qulification\QulificationVO.h" />
 >>>>>>> c7-gwjn-longyiye
+=======
+    <ClInclude Include="dao\contract\ContractDAO.h" />
+    <ClInclude Include="dao\contract\ContractMapper.h" />
+    <ClInclude Include="domain\do\ContractType\ContractTypeDO.h" />
+    <ClInclude Include="domain\do\DoInclude.h" />
+    <ClInclude Include="domain\dto\ContractType\ContractTypeDTO.h" />
+    <ClInclude Include="domain\GlobalInclude.h" />
+    <ClInclude Include="domain\query\ContractType\ContractTypeQuery.h" />
+    <ClInclude Include="domain\vo\ContractType\ContractTypeVO.h" />
+>>>>>>> c7-htlx-zhuiyi
     <ClInclude Include="Macros.h" />
     <ClInclude Include="ServerInfo.h" />
+    <ClInclude Include="service\contract\ContractService.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="controller\archive\ArchiveController.cpp" />
     <ClCompile Include="controller\Router.cpp" />
     <ClCompile Include="controller\SystemInterceptor.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="controller\titleCatalogue\typeChangeController\TypeChangeController.cpp" />
     <ClCompile Include="controller\titleCatalogue\typeDeleteController\TypeDeleteController.cpp" />
     <ClCompile Include="controller\titleCatalogue\typeQueryController\TypeQueryController.cpp" />
+=======
+    <ClCompile Include="dao\contract\ContractDAO.cpp" />
+>>>>>>> c7-htlx-zhuiyi
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="service\contract\ContractService.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
